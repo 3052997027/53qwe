@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源下载</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url('./20221121135344_72649.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .glass-panel {
+            position: fixed;
+            top: 0;
+            padding: 12px 60px;
+            width: 100%;
+            border-radius: 0 0 50px 50px;
+            background: linear-gradient(135deg, 
+                rgba(255,255,255,0.15) 0%, 
+                rgba(255,255,255,0.08) 100%);
+            backdrop-filter: blur(16px) saturate(180%);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            border: 1px solid rgba(255,255,255,0.15);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .resource-grid {
+            position: relative;
+            top: 120px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .resource-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-panel">
+        <a href="sy.html" class="nav-button">首页</a>
+        <a href="jon.html" class="nav-button">加入我们</a>
+        <a href="#" class="nav-button">下载</a>
+        <a href="lxfs.html" class="nav-button">联系我们</a>
+    </div>
+
+    <div class="resource-grid">
+        <div class="resource-card">
+            <h3>win10镜像文件</h3>
+            <p>精简游戏版本镜像文件</p>
+            <a href="https://www.123865.com/s/zgK8Vv-0tMhd" download class="download-btn">立即下载</a>
+        </div>
+        <div class="resource-card">
+            <h3>UI素材包</h3>
+            <p>专业级界面设计素材（PSD/AI格式）</p>
+            <button class="download-btn">即将上线</button>
+        </div>
+        <div class="resource-card">
+            <h3>图标合集</h3>
+            <p>500+ SVG格式矢量图标</p>
+            <button class="download-btn">即将上线</button>
+        </div>
+    </div>
+</body>
+</html>
