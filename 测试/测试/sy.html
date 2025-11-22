@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #f0f0f0 url('./20221121135344_72649.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .welcome-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .cta-button {
+            padding: 12px 30px;
+            font-size: 1.2em;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>欢迎来到我的网站</h1>
+        <p>探索更多精彩内容</p>
+        <button class="cta-button" onclick="window.location.href='./sy2.html'">立即开始</button>
+    </div>
+</body>
+</html>

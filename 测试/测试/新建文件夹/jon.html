@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('../20221121135344_72649.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .glass-panel {
+            position: fixed;
+            top: 0;
+            padding: 12px 60px;
+            width: 100%;
+            border-radius: 0 0 50px 50px;
+            background: linear-gradient(135deg, 
+                rgba(255,255,255,0.15) 0%, 
+                rgba(255,255,255,0.08) 100%);
+            backdrop-filter: blur(16px) saturate(180%);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            border: 1px solid rgba(255,255,255,0.15);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-button {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .join-form {
+            position: relative;
+            top: 120px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+        }
+
+        button[type="submit"] {
+            background: #007bff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-panel">
+        <a href="../sy.html" class="nav-button">首页</a>
+        <a href="../lxfs.html" class="nav-button">联系我们</a>
+    </div>
+
+    <div class="join-form">
+        <h2>加入我们的团队</h2>
+        <form action="./ok.html">
+            <div class="form-group">
+                <input type="text" placeholder="姓名" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="电子邮箱" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="联系电话">
+            </div>
+            <div class="form-group">
+                <textarea rows="4" placeholder="自我介绍"></textarea>
+            </div>
+            <button type="submit">注册</button>
+        </form>
+    </div>
+</body>
+</html>
